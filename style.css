@@ -1,0 +1,65 @@
+
+.caja {
+    /* Propiedades espciales que se heredan */
+    font-size: 20px;
+    color: blue;
+
+    outline: 2px solid green;
+    width: 100px;
+    height: 100px;
+    border: 5px solid orange;
+    padding: 50px;
+    margin: 50px;
+}
+ h1 {
+  color: red;
+}
+
+.titulo-principal-texto-grande {
+  font-size: 60px;
+  color: black;
+}
+
+#texto-pequeno {
+  font-size: 35px;
+  color: blue;
+}
+
+header > nav > a {
+  font-size: 50px;
+}
+
+h2,
+.texto-centrado {
+  text-align: center;
+}
+
+aside a {
+  color: green;
+  font-size: 30px;
+}
+
+/* Estilizar textos */
+/* text-align: right;left or center; */
+/* text-align: justify; quitar los epacios de los textos molestos*/
+.Alineacion{
+    text-align: right;
+    text-align: justify;
+}
+
+.Tamanos{
+    font-size: 22px;
+}
+
+.Decoration{
+    
+    text-decoration: underline;
+}
+
+.quitar-subrayado {
+    text-decoration: unset;
+}
+
+.Transformaciones {
+    text-transform: capitalize;
+}
