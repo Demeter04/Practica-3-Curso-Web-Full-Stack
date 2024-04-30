@@ -1,3 +1,12 @@
+body{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+    
+}
 
 .caja {
     /* Propiedades espciales que se heredan */
@@ -61,5 +70,60 @@ aside a {
 }
 
 .Transformaciones {
+  /* Texto para manejar las mayusculas y minusculas del texto */
     text-transform: capitalize;
+}
+
+.Espacio{
+  /* Modifica el espacio de una linea de texto */
+  line-height: 40px;
+  /* Modifica el espacio entre letras  */
+  letter-spacing: 1px;
+  /* Modifica el espacio entre cada palabra */
+  word-spacing: 10px;
+}
+
+.grosor-letra{
+  /* El valor del grosor de la letra */
+  font-weight: 800;
+}
+
+.posicion-caja-1, .posicion-caja-2, .posicion-caja-3, .posicion-caja-4 {
+  height: 300px;
+  width: 300px;
+  border: 3px solid black;
+  margin: 20px;
+  text-align: center;
+}
+
+.caja-padre{
+  position: relative;
+  border: 2px solid blue;
+  
+}
+
+.posicion-caja-1{
+  /* El movimiento sera relativo a la posicion inicial 1 movimiento por eje, asi mismo sera el emuje dependiendo del lado, el movimiento sera apartir de la posicion del elemento */
+  position: relative;
+  /* left: 200px; */
+}
+
+.posicion-caja-2{
+  /* Su posicion es relativa a las dimensiones de la etiqueta padre relative, esta no ocupara espacio sera como una imagen al frente */
+  position: absolute;
+  border-color: red;
+  bottom: 0;
+  right: 0;
+}
+
+.posicion-caja-3{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+.posicion-caja-4{
+  /* Posicion que se comporta mediante el scroll del usuario tocando con la parte superior de la pantalla */
+  position: sticky;
+  top: 20px;
 }
