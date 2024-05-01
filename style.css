@@ -117,13 +117,46 @@ aside a {
 }
 
 .posicion-caja-3{
-  position: fixed;
+  /* position: fixed;
   bottom: 0;
-  right: 0;
+  right: 0; */
+  position: relative;
 }
 
 .posicion-caja-4{
   /* Posicion que se comporta mediante el scroll del usuario tocando con la parte superior de la pantalla */
-  position: sticky;
-  top: 20px;
+  /* position: sticky; */
+  /* La medida del top es entonces la distancia para correr la accion */
+  /* top: 20px; */
+  position: relative;
+}
+
+.llamando {
+  width:100px;
+}
+
+.cuadricula{
+  outline: 2px solid red;
+  display: grid;
+  /* grid-template-columns: auto auto; ajusta autamaticamente*/
+  /* grid-template-columns: 1fr es partir en fraccion la cuadricula la fraccion se cuadrara sola */
+  grid-template-columns: auto 1fr 1fr;
+  /* Ordena los objetos de manera horizontal, flex hacia los lados o center*/
+  justify-items: flex-start;
+  grid-template-rows: 100px 100px 100px;
+  /* Ordena los objetos de manera vertical */
+  align-items: center;
+}
+
+.uno {
+  /* object fit cover permite llenar mejor la cuadricula */
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  /* Columnas que ocupara la imagen */
+  grid-column: 1/3;
+  /* las filas que ocupara la imagen */
+  grid-row: 1/4;
+  
+
 }
